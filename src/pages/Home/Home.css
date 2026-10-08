@@ -1,0 +1,423 @@
+.home {
+  background: #f6f3eb;
+  color: #202820;
+  padding-top: 0;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  min-height: 650px;
+  height: 92vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("C:\Users\arpit\OneDrive\Desktop\MERN Projects\04-cafe-website\src\assets\home1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 17, 0.78),
+    rgba(15, 23, 17, 0.42),
+    rgba(15, 23, 17, 0.35)
+  );
+}
+
+.hero-content {
+  width: min(1160px, 90%);
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+}
+
+.hero-small,
+.section-label {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #c8a96b;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 0.98;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 0 25px;
+}
+
+.hero-description {
+  max-width: 470px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #eee;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 13px 23px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: #c8a96b;
+  color: #182019;
+}
+
+.primary-btn:hover {
+  background: #e0c88f;
+}
+
+.secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background: #fff;
+  color: #182019;
+}
+
+.scroll-text {
+  position: absolute;
+  bottom: 28px;
+  left: 5%;
+  z-index: 2;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #ddd;
+}
+
+
+/* ================= COMMON ================= */
+
+.section-padding {
+  padding: 95px 5%;
+  max-width: 1160px;
+  margin: auto;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 0.95fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.intro-content h2,
+.section-heading h2,
+.experience h2,
+.reservation-cta h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(35px, 4vw, 52px);
+  line-height: 1.08;
+  margin: 0 0 25px;
+}
+
+.intro-content > p:not(.section-label) {
+  color: #697069;
+  line-height: 1.8;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #202820;
+  text-decoration: none;
+  font-size: 12px;
+  border-bottom: 1px solid #c8a96b;
+  padding-bottom: 5px;
+}
+
+
+/* ================= SIGNATURE ================= */
+
+.signature {
+  max-width: none;
+  background: #e9e6dc;
+}
+
+.section-heading {
+  max-width: 1160px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.dish-grid {
+  max-width: 1160px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.dish-card {
+  background: #f8f6ef;
+}
+
+.dish-card img {
+  display: block;
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+}
+
+.dish-info {
+  padding: 19px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.dish-info h3 {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 7px;
+}
+
+.dish-info p {
+  margin: 0;
+  color: #777d76;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.dish-info span {
+  color: #8d6d35;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+
+/* ================= EXPERIENCE ================= */
+
+.experience {
+  min-height: 570px;
+  position: relative;
+ background-image: url("C:\Users\arpit\OneDrive\Desktop\MERN Projects\04-cafe-website\src\assets\home2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.experience-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 25, 19, 0.67);
+}
+
+.experience-content {
+  position: relative;
+  z-index: 2;
+  width: min(1160px, 90%);
+  margin: auto;
+  color: #fff;
+}
+
+.experience h2 {
+  margin-bottom: 22px;
+}
+
+.experience-content > p:not(.section-label) {
+  max-width: 420px;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+
+/* ================= REVIEWS ================= */
+
+.centered {
+  display: block;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.centered .section-label {
+  margin-bottom: 12px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review-card {
+  padding: 30px;
+  background: #eeece4;
+  text-align: center;
+}
+
+.stars {
+  color: #b58d4c;
+  letter-spacing: 4px;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.review-card p {
+  color: #606860;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.review-card span {
+  display: block;
+  margin-top: 20px;
+  font-size: 11px;
+  color: #303830;
+}
+
+
+/* ================= CTA ================= */
+
+.reservation-cta {
+  max-width: 1160px;
+  margin: auto;
+  padding: 75px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.reservation-cta h2 {
+  margin: 0;
+}
+
+.reservation-cta .primary-btn {
+  white-space: nowrap;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .intro-image img {
+    height: 400px;
+  }
+
+  .dish-grid,
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dish-card:last-child {
+    grid-column: span 2;
+    max-width: calc(50% - 10px);
+  }
+
+  .reservation-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 650px;
+    height: 85vh;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .section-padding {
+    padding: 70px 5%;
+  }
+
+  .intro-image img {
+    height: 350px;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading .text-link {
+    margin-top: 15px;
+  }
+
+  .dish-grid,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dish-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .dish-card img {
+    height: 260px;
+  }
+
+  .experience {
+    min-height: 500px;
+  }
+
+  .reservation-cta {
+    padding: 65px 5%;
+  }
+}
