@@ -318,6 +318,9 @@
 /* TABLET */
 
 @media (max-width: 850px) {
+    .contact-page{
+        margin-top: 20px;
+    }
     .contact-section {
         grid-template-columns: 1fr;
         gap: 55px;

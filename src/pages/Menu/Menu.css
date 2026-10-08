@@ -243,6 +243,9 @@
 /* TABLET */
 
 @media (max-width: 900px) {
+  .menu-page{
+margin-top: 20px;
+  }
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
   }
